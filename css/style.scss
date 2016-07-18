@@ -1,0 +1,51 @@
+html {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+*, *:before, *:after {
+	-webkit-box-sizing: inherit;
+	-moz-box-sizing: inherit;
+	box-sizing: inherit;
+}
+body {
+	background: #eee;
+	height: 100%;
+}
+.leftnav {
+  display: inline-block;
+  vertical-align: top;
+  width: 10%;
+	ul {
+   display: -webkit-flex;
+   display: flex;
+   -webkit-flex-direction: column; 
+   flex-direction: column;
+   -webkit-align-items: flex-start;
+   align-items: flex-start;
+		li {
+  height: 25%;
+   display: -webkit-flex;
+   display: flex;
+   -webkit-flex-direction: column;
+   flex-direction: column;
+		}
+	}
+}
+.panel {
+	float: right;
+	height: 50%;
+	width: 45%;
+}
+#pan1 {
+
+}
+#pan2 {
+
+}
+#pan3 {
+
+}
+#pan4 {
+
+}
