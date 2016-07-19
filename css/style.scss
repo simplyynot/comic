@@ -8,44 +8,71 @@ html {
 	-moz-box-sizing: inherit;
 	box-sizing: inherit;
 }
-body {
+html, body {
 	background: #eee;
 	height: 100%;
+	width: 100%;
 }
 .leftnav {
-  display: inline-block;
-  vertical-align: top;
-  width: 10%;
-	ul {
-   display: -webkit-flex;
-   display: flex;
-   -webkit-flex-direction: column; 
-   flex-direction: column;
-   -webkit-align-items: flex-start;
-   align-items: flex-start;
-		li {
-  height: 25%;
-   display: -webkit-flex;
-   display: flex;
-   -webkit-flex-direction: column;
-   flex-direction: column;
+	display: flex;
+	flex-direction: column;
+	float: left;
+	min-height: 100%;
+	width: 10%;
+	.nav {
+		align-items: center;
+		border: 1px solid #000;
+		display: flex;
+		flex-grow: 1;
+		h3 {
+			padding: 0 20px;
 		}
 	}
 }
-.panel {
+.panel_wrapper {
+	display: flex;
+	flex-direction: column;
 	float: right;
-	height: 50%;
-	width: 45%;
-}
-#pan1 {
+	min-height: 100%;
+	width: 90%;
+	.panel_row {
+		flex-grow: 1;
+		min-height: 100%;
+		width: 100%;
+		display: flex;
+		flex-direction: row;
+	}
+	.panel_top {
 
-}
-#pan2 {
+	}
+	.panel_bottom {
 
-}
-#pan3 {
-
-}
-#pan4 {
-
+	}
+	.pane {
+		min-width: 50%;
+		min-height: 100%;
+		float: left;
+		overflow: auto;
+		flex-grow: 1;
+	}
+	.panel1 {
+		background: black;
+		// transform: rotate(-20deg);
+		z-index: 1;
+	}
+	.panel2 {
+		background: blue;
+		// transform: rotate(-40deg);
+		z-index: 2;
+	}
+	.panel3 {
+		background: green;
+		// transform: rotate(20deg);
+		z-index: 3;
+	}
+	.panel4 {
+		background: red;
+		// transform: rotate(60deg);
+		z-index: 4;
+	}
 }
