@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<title>Comic</title>
+	<title>Web Watch</title>
 	<meta charset="utf-8">
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,31 +10,55 @@
 	<link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
 	<link href="bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">
 	<link href="css/style.css" rel="stylesheet">
-
 </head>
 
 <body>
-	<div class="leftnav">
-		 <div class="nav nav1"><h3>Page 1</h3></div>
-		 <div class="nav nav2"><h3>Page 2</h3></div>
-		 <div class="nav nav3"><h3>Page 3</h3></div>
-		 <div class="nav nav4"><h3>Page 4</h3></div>
-	</div>
-	<div class="panel_wrapper">
-		<div class="panel_row panel_top">
-			<div class="pane panel1">
-				<h3>panel</h3>
-			</div>
-			<div class="pane panel2">
-				<h3>panel</h3>
+	<div id="webwatch">
+		<div class="logo">
+			<div class="logo_placeholder">
+				<h2>WebWatch</h2>
 			</div>
 		</div>
-		<div class="panel_row panel_bottom">
-			<div class="pane panel3">
-				<h3>panel</h3>
-			</div>
-			<div class="pane panel4">
-				<h3>panel</h3>
+		<div class="main container-fluid well">
+			<ul class="tabs well" role="tablist">
+				<li class="tab active btn">
+					<a href="#furl">URL</a>
+				</li>
+				<li class="tab">
+					<a href="#user_input">Text Input</a>
+				</li>
+				<li class="tab">
+					<a href="#save">Save</a>
+				</li>
+				<li class="tab">
+					<a href="#another">Anothers</a>
+				</li>
+			</ul>
+			<div id="furl well"></div>
+			<div id="user_input" class="well" aria-labelledby="ui-id-1" role="tabpanel" aria-expanded="true" aria-hidden="false" style="display: block;">
+				<div class="entry well">
+					<input type="text" id="title1" class="fragmentHeader" value="[User Input Code]">
+					<div class="textInputContainer">
+						<textarea id="clip1" class="textInput"></textarea>
+						<div class="clearBtnContainer">
+							<a class="clearBtn hidden"><i class="fa fa-trash" title="Reset"></i></a>
+						</div>
+					</div>
+				</div>
+				<div class="entry floatRight well">
+					<input type="text" id="title2" class="fragmentHeader" value="[Live Input Code]">
+					<div class="textInputContainer">
+						<textarea id="clip2" class="textInput"></textarea>
+						<div class="clearBtnContainer">
+							<a class="clearBtn hidden"><i class="fa fa-trash" title="Reset"></i></a>
+						</div>
+					</div>
+				</div>
+				<div class="submit text-center">
+					<a id="compareBtn" class="btn" action="compareClips" role="button" aria-disabled="true">
+						<span>Compare</span>
+					</a>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -41,4 +66,5 @@
 	<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="js/comic.js"></script>
 </body>
+
 </html>
