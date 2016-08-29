@@ -47,13 +47,17 @@ html, body {
     flex-grow: 1; }
   .panel_wrapper .panel1 {
     background: black;
+    transform: rotate(-20deg);
     z-index: 1; }
   .panel_wrapper .panel2 {
     background: blue;
+    transform: rotate(-40deg);
     z-index: 2; }
   .panel_wrapper .panel3 {
     background: green;
+    transform: rotate(20deg);
     z-index: 3; }
   .panel_wrapper .panel4 {
     background: red;
+    transform: rotate(60deg);
     z-index: 4; }

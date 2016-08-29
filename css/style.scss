@@ -57,22 +57,22 @@ html, body {
 	}
 	.panel1 {
 		background: black;
-		// transform: rotate(-20deg);
+		transform: rotate(-20deg);
 		z-index: 1;
 	}
 	.panel2 {
 		background: blue;
-		// transform: rotate(-40deg);
+		transform: rotate(-40deg);
 		z-index: 2;
 	}
 	.panel3 {
 		background: green;
-		// transform: rotate(20deg);
+		transform: rotate(20deg);
 		z-index: 3;
 	}
 	.panel4 {
 		background: red;
-		// transform: rotate(60deg);
+		transform: rotate(60deg);
 		z-index: 4;
 	}
 }
